@@ -1,23 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ApiData } from './components/apiData';
+import { Chart } from './components/chart';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <div style={{height: "70px", backgroundColor:"#7b90ee"}}><h1>Test test</h1></div>
+      <header className='App-header'>
+        <Chart></Chart>
+        <ApiData></ApiData>
       </header>
     </div>
   );
